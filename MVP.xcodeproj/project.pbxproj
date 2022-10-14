@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A20923C828F872B9000C7C70 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20923C728F872B9000C7C70 /* Protocols.swift */; };
+		A20923CA28F8733B000C7C70 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20923C928F8733B000C7C70 /* HomeView.swift */; };
 		A210D26C28EF13DC00658B81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A210D26B28EF13DC00658B81 /* AppDelegate.swift */; };
 		A210D26E28EF13DC00658B81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A210D26D28EF13DC00658B81 /* SceneDelegate.swift */; };
 		A210D27028EF13DC00658B81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A210D26F28EF13DC00658B81 /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A20923C728F872B9000C7C70 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		A20923C928F8733B000C7C70 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A210D26828EF13DC00658B81 /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A210D26B28EF13DC00658B81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A210D26D28EF13DC00658B81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A20923C528F87295000C7C70 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A20923C728F872B9000C7C70 /* Protocols.swift */,
+				A20923C628F8729A000C7C70 /*  View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A20923C628F8729A000C7C70 /*  View */ = {
+			isa = PBXGroup;
+			children = (
+				A20923C928F8733B000C7C70 /* HomeView.swift */,
+			);
+			path = " View";
+			sourceTree = "<group>";
+		};
 		A210D25F28EF13DC00658B81 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +144,7 @@
 		A26387FA28F0873100F8B562 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A20923C528F87295000C7C70 /* Home */,
 				A26387FB28F0873900F8B562 /* Main */,
 			);
 			path = Scenes;
@@ -307,6 +329,8 @@
 				A26387F528EF15D500F8B562 /* View.swift in Sources */,
 				A26387FE28F0876400F8B562 /* ViewState.swift in Sources */,
 				A210D27028EF13DC00658B81 /* ViewController.swift in Sources */,
+				A20923CA28F8733B000C7C70 /* HomeView.swift in Sources */,
+				A20923C828F872B9000C7C70 /* Protocols.swift in Sources */,
 				A2B2F29E28F5BC520046DE44 /* DispatchQueue+Ext.swift in Sources */,
 				A210D26C28EF13DC00658B81 /* AppDelegate.swift in Sources */,
 				A26387F928F0868400F8B562 /* Protocols.swift in Sources */,
