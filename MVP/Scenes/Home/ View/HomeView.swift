@@ -4,7 +4,7 @@ class HomeView: UIView {
 
     private let tableView: UITableView = {
         let tableView = UITableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.translatesAutoresizingMaskIntoConstraints = true
         return tableView
     }()
 
