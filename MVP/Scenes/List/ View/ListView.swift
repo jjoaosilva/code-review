@@ -1,6 +1,6 @@
 import UIKit
 
-class HomeView: UIView {
+class ListView: UIView {
 
     private let tableView: UITableView = {
         let tableView = UITableView()
@@ -25,10 +25,5 @@ class HomeView: UIView {
             tableView.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor),
             tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor)
         ])
-    }
-}
-
-extension HomeView: HomeViewType {
-    func show() {
     }
 }

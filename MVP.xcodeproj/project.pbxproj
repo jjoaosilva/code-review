@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A20923C828F872B9000C7C70 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20923C728F872B9000C7C70 /* Protocols.swift */; };
-		A20923CA28F8733B000C7C70 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20923C928F8733B000C7C70 /* HomeView.swift */; };
+		A20923CA28F8733B000C7C70 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20923C928F8733B000C7C70 /* ListView.swift */; };
 		A210D26C28EF13DC00658B81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A210D26B28EF13DC00658B81 /* AppDelegate.swift */; };
 		A210D26E28EF13DC00658B81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A210D26D28EF13DC00658B81 /* SceneDelegate.swift */; };
 		A210D27028EF13DC00658B81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A210D26F28EF13DC00658B81 /* ViewController.swift */; };
@@ -27,6 +27,7 @@
 		A266515B28F5839D00286868 /* PresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266515A28F5839D00286868 /* PresenterTests.swift */; };
 		A274BA2428F5B5E3007498A0 /* DispatchQueueMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A274BA2328F5B5E2007498A0 /* DispatchQueueMock.swift */; };
 		A2B2F29E28F5BC520046DE44 /* DispatchQueue+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2F29D28F5BC520046DE44 /* DispatchQueue+Ext.swift */; };
+		A2DA632D28FF0AFD00C9807C /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA632C28FF0AFD00C9807C /* ListViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,7 @@
 
 /* Begin PBXFileReference section */
 		A20923C728F872B9000C7C70 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		A20923C928F8733B000C7C70 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A20923C928F8733B000C7C70 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		A210D26828EF13DC00658B81 /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A210D26B28EF13DC00658B81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A210D26D28EF13DC00658B81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		A266515A28F5839D00286868 /* PresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterTests.swift; sourceTree = "<group>"; };
 		A274BA2328F5B5E2007498A0 /* DispatchQueueMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueMock.swift; sourceTree = "<group>"; };
 		A2B2F29D28F5BC520046DE44 /* DispatchQueue+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Ext.swift"; sourceTree = "<group>"; };
+		A2DA632C28FF0AFD00C9807C /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,19 +85,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A20923C528F87295000C7C70 /* Home */ = {
+		A20923C528F87295000C7C70 /* List */ = {
 			isa = PBXGroup;
 			children = (
 				A20923C728F872B9000C7C70 /* Protocols.swift */,
 				A20923C628F8729A000C7C70 /*  View */,
 			);
-			path = Home;
+			path = List;
 			sourceTree = "<group>";
 		};
 		A20923C628F8729A000C7C70 /*  View */ = {
 			isa = PBXGroup;
 			children = (
-				A20923C928F8733B000C7C70 /* HomeView.swift */,
+				A20923C928F8733B000C7C70 /* ListView.swift */,
+				A2DA632C28FF0AFD00C9807C /* ListViewCell.swift */,
 			);
 			path = " View";
 			sourceTree = "<group>";
@@ -144,7 +147,7 @@
 		A26387FA28F0873100F8B562 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				A20923C528F87295000C7C70 /* Home */,
+				A20923C528F87295000C7C70 /* List */,
 				A26387FB28F0873900F8B562 /* Main */,
 			);
 			path = Scenes;
@@ -329,10 +332,11 @@
 				A26387F528EF15D500F8B562 /* View.swift in Sources */,
 				A26387FE28F0876400F8B562 /* ViewState.swift in Sources */,
 				A210D27028EF13DC00658B81 /* ViewController.swift in Sources */,
-				A20923CA28F8733B000C7C70 /* HomeView.swift in Sources */,
+				A20923CA28F8733B000C7C70 /* ListView.swift in Sources */,
 				A20923C828F872B9000C7C70 /* Protocols.swift in Sources */,
 				A2B2F29E28F5BC520046DE44 /* DispatchQueue+Ext.swift in Sources */,
 				A210D26C28EF13DC00658B81 /* AppDelegate.swift in Sources */,
+				A2DA632D28FF0AFD00C9807C /* ListViewCell.swift in Sources */,
 				A26387F928F0868400F8B562 /* Protocols.swift in Sources */,
 				A210D26E28EF13DC00658B81 /* SceneDelegate.swift in Sources */,
 				A26387F728EF3B8A00F8B562 /* Presenter.swift in Sources */,
